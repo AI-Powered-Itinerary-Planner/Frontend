@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+  background-color: #9FB8BF; /* Dark background */
+  color: #ffffff; /* White text */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+/* Form Box */
+.forms {
+  background-color: #9FB8BF; /* Slightly lighter black */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* Select */
+.select {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #000;
+  background-color: #FCEABA;
+  border: none;
+  border-radius: 25px;
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 24 24' fill='black' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Headings */
+h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #FCEABA; /* Light gray */
+  color: #000;
+  font-size: 16px;
+  text-align: left;
+}
+input::placeholder {
+  color: #000; /* black placeholder */
+  opacity: 1;  /* ensures it's not faded */
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #FCEABA; /* White button */
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dddddd;
+}
+
+/* OR Text */
+.or-text {
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Google Icon */
+.google-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.google-login img {
+  width: 30px;
+  cursor: pointer;
+}

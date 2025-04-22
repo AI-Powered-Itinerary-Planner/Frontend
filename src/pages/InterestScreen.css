@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.interest-page {
+  text-align: center;
+  background-color: #9FB8BF;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interest-container {
+  width: 100%;
+  max-width: 600px; 
+  padding-top: 10px;
+}
+
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5px; 
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; 
+}
+
+.interest-button {
+  background-color: #FCEABA;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #1B2936; 
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s; 
+  text-align: left;
+  min-width: 140px;
+  max-width: 180px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+.interest-button.selected {
+  background-color: #1B2936; 
+  color: #FCEABA; 
+}
+.interest-button:hover {
+  background-color: #1B2936; 
+  color: #FCEABA; 
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: #1B2936;
+  text-align: center; 
+  margin-top: 0;
+  padding-top: 20px;
+  width: 100%; 
+  padding-left: 10px; 
+}
+
+
+.done-button {
+  width: 10%;
+  border-radius: 20px;
+  padding: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: #FCEABA;
+  color: #1B2936;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s; 
+  margin-left: auto;
+  display: block;
+}
+
+.done-button:hover {
+  background-color: #1B2936; 
+  color: #FCEABA;
+}
+.category-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 3px; 
+  margin-top: 15px;
+  text-align: left;
+  width: 100%;
+  padding-left: 10px;
+}
+
+
+@media (max-width: 1200px) {
+  .interest-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .interest-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .interest-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .interest-button {
+    font-size: 13px;
+    padding: 8px 10px;
+    min-width: 110px;
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .interest-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .interest-button {
+    font-size: 12px;
+    padding: 6px 8px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 360px) {
+  .interest-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

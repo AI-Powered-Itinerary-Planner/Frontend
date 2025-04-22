@@ -1,0 +1,96 @@
+.multi-select {
+  width: 100%;
+  padding: 2px;
+  margin: 10px 0;
+  border-radius: 25px;
+  background-color: #FCEABA;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.multi-select .multi-select__control {
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+  min-height: 38px !important;
+  padding: 4px 8px;
+  border-radius: 25px;
+}
+
+.multi-select .multi-select__value-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.multi-select .multi-select__multi-value {
+  background-color: #FFB703;
+  color: #000;
+  padding: 2px 6px;
+  font-size: 13px;
+  border-radius: 12px;
+  margin: 2px 4px;
+}
+
+.multi-select .multi-select__multi-value__label {
+  color: #000;
+}
+
+.multi-select .multi-select__multi-value__remove {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.multi-select .multi-select__placeholder {
+  color: #000;
+}
+
+.multi-select .multi-select__option {
+  padding: 10px;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+.multi-select .multi-select__option:hover {
+  background-color: #f0b400;
+  color: #000;
+}
+
+.multi-select .multi-select__option--is-selected {
+  background-color: #FFB703;
+  color: #000;
+}
+
+.multi-select .multi-select__option--is-selected:hover {
+  background-color: #f0b400;
+  color: #000;
+}
+
+.multi-select .multi-select__menu {
+  background-color: #FCEABA;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.multi-select .multi-select__menu-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.multi-select .multi-select__indicator {
+    color: #000 !important; /* Make arrow icon black */
+    padding: 4px;
+}
+.multi-select .multi-select__control {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    min-height: 40px;
+}
+.multi-select .multi-select__value-container {
+    padding: 0;
+  }
